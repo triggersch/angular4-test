@@ -9,11 +9,7 @@ export class ArticleComponent implements OnInit {
 
   @HostBinding('attr.class') cssClass = 'row';
   @Input() article: Article;
-  constructor() {
-
-    //this.article = new Article('pomoDeDouche','http://pomodouche.fr');
-
-  }
+  constructor() {}
 
   voteUp(): boolean{
     this.article.voteUp();
